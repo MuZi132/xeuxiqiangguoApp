@@ -1,0 +1,37 @@
+<!-- res/layout/news_item_layout.xml -->
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+    <!-- 新闻标题 -->
+    <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"/>
+
+    <!-- 新闻内容 -->
+    <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleTextView"
+            android:textSize="14sp"
+            android:layout_marginTop="60dp"
+            android:textColor="#888888"/>
+    <TextView
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleTextView"
+            android:layout_toRightOf="@id/dateTextView"
+            android:text="播放"
+            android:textColor="@color/my_light_primary"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="59dp"/>
+
+    <!-- 其他视图组件 -->
+
+</RelativeLayout>

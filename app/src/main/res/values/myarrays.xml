@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="areacode">
+        <item> +86</item>
+        <item> +852</item>
+    </string-array>
+    <string-array name="category">
+        <item>推荐</item>
+        <item>要闻</item>
+        <item>思想</item>
+        <item>亮点</item>
+        <item>河南</item>
+    </string-array>
+</resources>

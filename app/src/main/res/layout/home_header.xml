@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/my_light_primary"
+        android:orientation="horizontal">
+    <!-- logo-->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:text="学习强国"/>
+    <!-- 搜索栏 -->
+    <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="172dp"
+            android:layout_height="match_parent"
+            android:background="@color/my_desired_color"
+            android:hint="搜索"/>
+    <!-- 积分显示 -->
+    <TextView
+            android:id="@+id/pointsTextView"
+            android:layout_width="14sp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="积分" />
+    <TextView android:layout_width="wrap_content" android:layout_height="match_parent"
+              android:text="100"
+              android:gravity="center"
+              android:textColor="@color/white"
+              android:textSize="20sp"/>
+    <TextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="|"/>
+    <TextView
+            android:id="@+id/user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="我的"/>
+</LinearLayout>
