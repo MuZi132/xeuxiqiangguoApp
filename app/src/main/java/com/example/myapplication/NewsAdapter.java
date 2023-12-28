@@ -43,14 +43,18 @@ public class NewsAdapter extends BaseAdapter {
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, MyService.class);
-                if (MyService.isPlaying == false){
-                    context.startService(intent);
+//                创建Intent对象，且设置Intent对象的action属性
+                Intent intent = new Intent();
+                intent.setAction(MusicBroadcast.ACTION);
+                intent.setPackage(context.getPackageName());
+                if (start.getText().equals("播放")){
+                    intent.putExtra(MusicBroadcast.ACTION_KEY, MusicBroadcast.ACTION_PLAY);
                     start.setText("暂停");
                 }else {
-                    context.stopService(intent);
+                    intent.putExtra(MusicBroadcast.ACTION_KEY, MusicBroadcast.ACTION_PAUSE);
                     start.setText("播放");
                 }
+                context.sendBroadcast(intent);
             }
         });
         titleTextView.setText(newsList.get(position).getTitle());
